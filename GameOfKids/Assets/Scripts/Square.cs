@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Square : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Square : MonoBehaviour
 
     private bool isTouched = false;
     public AudioSource squareSound;
+    
     
     
 
@@ -24,6 +26,7 @@ public class Square : MonoBehaviour
     
     void Update()
     {
+        
         if (isTouched)
         {
             squareSound.Play();
